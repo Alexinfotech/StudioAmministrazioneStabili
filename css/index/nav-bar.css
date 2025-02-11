@@ -1,0 +1,144 @@
+/* css/nav-bar.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1rem;
+    z-index: 1001;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.drop {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #ff5722;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.dropdown-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-link:hover {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.nav-item.active .dropdown {
+    display: block;
+}
+
+.header-text {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.header-text.fade-out {
+    opacity: 0;
+}
+
+.header-text.fade-in {
+    opacity: 1;
+}
+
+.header-text iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .dropdown {
+        position: static;
+        box-shadow: none;
+        border: none;
+    }
+
+    .dropdown-link {
+        background-color: rgba(33, 37, 41, 0.9);
+        color: #fff;
+    }
+
+    .dropdown-link:hover {
+        background-color: #ff5722;
+        color: #fff;
+    }
+
+    .header-text iframe {
+        height: 300px;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    .fade-out {
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+    }
+}

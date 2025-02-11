@@ -1,0 +1,18 @@
+{
+    "name": "alessandrotornabene/form",
+    "autoload": {
+        "psr-4": {
+            "Alessandrotornabene\\Form\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "alessandro.tornabene@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "^2.0",
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

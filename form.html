@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Sito Vetrina - Studio Riva Amministrazione Immobili</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/form/form.css">
+    <link rel="stylesheet" href="css/form/ChatbotForm.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <a href="#home">
+            <img src="images/logo/logo.jpg" alt="Studio Amministrazione Condomini" class="logo" loading="lazy">
+        </a>
+        <!--
+        <div class="footer-logo">
+            <div class="contact-info" data-aos="fade-up">
+                <p>Viale Delle Rimembranze Di Greco, 55</p>
+                <p>20125, Milano</p>
+                <p>Tel. 02 66715707</p>
+                <p>P.iva</p>
+            </div>
+        </div> -->
+        <div class="hero-content">
+            <h1>Richiedi Informazioni</h1>
+            <p>Compila il form sottostante e ti risponderemo al più presto.</p>
+            <p>In alternartiva chiedi ad Ambrogio, il nostro ChatBot interattivo.</p>
+            <p>Tieni premuto il pulsante fino a quando Ambrogio non si collega e segui le istruzioni</p>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <section class="form-section" data-aos="fade-up">
+            <h2>Contattaci Ora</h2>
+            <p>Compila i campi per inviare la tua richiesta</p>
+
+            <form id="contactForm" novalidate action="js/form/send_email.php" method="POST">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required
+                        aria-required="true">
+                    <label for="nome">Nome *</label>
+                    <div class="invalid-feedback">
+                        Per favore inserisci il tuo nome.
+                    </div>
+                </div>
+
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required
+                        aria-required="true">
+                    <label for="email">Email *</label>
+                    <div class="invalid-feedback">
+                        Per favore inserisci una email valida.
+                    </div>
+                </div>
+
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="telefono" name="telefono"
+                        placeholder="Telefono (opzionale)" pattern="^\+?[0-9\s\-\(\)]{7,15}$" aria-required="false">
+                    <label for="telefono">Telefono (opzionale)</label>
+                    <div class="invalid-feedback">
+                        Per favore inserisci un numero di telefono valido.
+                    </div>
+                </div>
+
+
+                <div class="form-floating">
+                    <textarea class="form-control" id="messaggio" name="messaggio"
+                        placeholder="Inserisci il tuo messaggio" style="height: 140px;" required
+                        aria-required="true"></textarea>
+                    <label for="messaggio">Messaggio *</label>
+                    <div class="invalid-feedback">
+                        Per favore inserisci il tuo messaggio.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    Invia Richiesta
+                </button>
+            </form>
+
+            <div id="formMessage" aria-live="polite"></div>
+
+            <div class="back-btn">
+                <a href="index.html#home">&larr; Torna alla Home</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 - Studio Riva Amministrazione Immobili - Tutti i diritti riservati.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="mailto:info@studiocondomini.it" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+390123456789" aria-label="Telefono Cellulare">
+                        <i class="fas fa-mobile-alt"></i>
+                    </a>
+                    <a href="mailto:pec@studiocondomini.it" aria-label="PEC">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" style="display:none; position: fixed; bottom: 80px; right: 20px; z-index: 10000;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chatbot Root (UNICA OCCORRENZA) -->
+    <div id="chatbot-root"></div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Smooth Scroll JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/form/form.js"></script>
+
+    <!-- Chatbot Script -->
+    <script type="text/babel" src="js/form/ChatbotForm.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: false,
+            easing: 'ease-in-out',
+        });
+
+        new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+</body>
+
+</html>

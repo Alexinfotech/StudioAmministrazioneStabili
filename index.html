@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>S Studio Riva Amministrazione Immobili</title>
+
+    <!-- Bootstrap CSS con hash corretto -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome per icone social -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS per animazioni -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <!-- Stili personalizzati -->
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/index/nav-bar.css">
+    <link rel="stylesheet" href="css/index/cambioImmagineWeb.css">
+    <link rel="stylesheet" href="css/index/cambioImmagineHeader.css">
+    <link rel="stylesheet" href="css/index/ChatbotIndex.css"> <!-- Chatbot CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- NAVBAR SOPRAPPOSTA -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#chi-siamo" class="nav-link direct-link">Chi Siamo</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mappa" class="nav-link direct-link">Dove Siamo</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contatti" class="nav-link direct-link">Contatti</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Come Raggiungerci</a>
+                <ul class="dropdown">
+                    <li><a href="#trasporti" class="dropdown-link">Trasporti Pubblici</a></li>
+                    <li><a href="#parcheggio" class="dropdown-link">Parcheggio</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- HEADER (NON MODIFICATO) -->
+    <header id="home">
+        <a href="#home">
+            <img src="images/logo/logo.jpg" alt="Studio Amministrazione Condomini" class="logo" loading="lazy">
+        </a>
+        <!-- <div class="footer-logo">
+            <h6 data-aos="fade-up">
+                P.iva 12345678910</h6>
+            <p data-aos="fade-up" data-aos-delay="200"></p>
+        </div>-->
+        <div class="container">
+            <h1 data-aos="fade-up">Studio Riva Amministrazione Immobili</h1>
+            <div id="header-text" class="header-text" data-aos="fade-up" data-aos-delay="200">
+                ESEMPIO: Benvenuti nello Studio d'Eccellenza per l'Amministrazione Condominiale.
+                DA 25 Gestione accurata, trasparenza e professionalità al vostro servizio.
+            </div>
+        </div>
+    </header>
+    <div id="chatbot-root"></div>
+
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" style="display:none; position: fixed; bottom: 80px; right: 20px; z-index: 10000;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    </header>
+    <!-- FINE HEADER ORIGINALE -->
+
+    <!-- SEZIONE SERVIZI -->
+    <section class="services" id="servizi">
+        <div class="container">
+            <h2 data-aos="fade-up">I Nostri Servizi</h2>
+
+            <!-- Servizio 1 -->
+            <div class="service-item text-center mx-auto" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/services/ord/ord.jpeg" alt="Gestione Ordinaria"
+                    class="img-fluid rounded service-image mb-3" loading="lazy">
+                <h3>Opzione 1</h3>
+                <p>
+                    ESEMPIO: organizzazione riunioni e risoluzione di problematiche in tempi rapidi.
+                    Coordinamento di interventi strutturali, supporto tecnico e amministrativo,
+                    e supervisione costante per assicurare la piena efficienza dei servizi.
+                </p>
+            </div>
+
+            <!-- Servizio 2 -->
+            <div class="service-item text-center mx-auto" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/services/trasparenza/traspa.jpeg" alt="Trasparenza e Comunicazione"
+                    class="img-fluid rounded service-image mb-3" loading="lazy">
+                <h3>Opzione 2</h3>
+                <p>
+                    ESEMPIO: Utilizzo di piattaforme online per la condivisione di documenti,
+                    bilanci e aggiornamenti costanti con i condomini. Garantiamo una comunicazione
+                    chiara e tempestiva per mantenere tutti i residenti informati e coinvolti.
+                </p>
+            </div>
+
+            <!-- Servizio 3 -->
+            <div class="service-item text-center mx-auto" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/services/consu/consu.jpeg" alt="Consulenza Legale e Fiscale"
+                    class="img-fluid rounded service-image mb-3" loading="lazy">
+                <h3>Opzione 3</h3>
+                <p>
+                    ESEMPIO: Collaborazione con professionisti per analizzare e risolvere questioni
+                    legali e fiscali, garantendo sicurezza e regolarità per i condomini.
+                    Monitoraggio accurato dei bilanci condominiali, gestione delle spese e ottimizzazione delle
+                    risorse finanziarie.
+                </p>
+            </div>
+
+            <!-- Servizio 4 -->
+            <div class="service-item text-center mx-auto" data-aos="fade-up" data-aos-delay="500">
+                <img src="images/services/assistenza/assistenza.jpeg" alt="Assistenza Tecnica"
+                    class="img-fluid rounded service-image mb-3" loading="lazy">
+                <h3>Opzione 4</h3>
+                <p>
+                    ESEMPIO: Supporto tecnico per risolvere rapidamente qualsiasi problema strutturale o tecnologico
+                    all'interno del condominio. Interventi tempestivi e professionali per garantire la sicurezza
+                    e il comfort di tutti i residenti.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE STATISTICHE -->
+    <section class="statistics" id="statistiche">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-target="55">0</div>
+                    <div class="stat-description">ESEMPIO: Condomini Gestiti</div>
+                </div>
+                <div class="col-md-4 stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-target="89">0</div>
+                    <div class="stat-description">ESEMPIO: Fornitori Esterni</div>
+                </div>
+                <div class="col-md-4 stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-target="156">0</div>
+                    <div class="stat-description">ESEMPIO: Sinistri Chiusi con Successo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEZIONE FOTO & DESCRIZIONI -->
+    <section class="photo-section" id="gallery">
+        <div class="container">
+
+            <!-- Team dello Studio -->
+            <div class="photo-item" data-aos="fade-up">
+                <div class="photo-image col-12 col-md-6">
+                    <img src="images/gallery/team/team.jpeg" alt="Team dello Studio" class="img-fluid rounded" id="team"
+                        loading="lazy">
+                </div>
+                <div class="photo-description col-12 col-md-6">
+                    <h2 class="photo-title" data-aos="fade-up">DESCRIZIONI</h2>
+                    <p class="photo-text" data-aos="fade-up" data-aos-delay="200">
+                        ESEMPIO:Un team di professionisti dedicati a fornire il miglior servizio di amministrazione
+                        condominiale.
+                        La nostra esperienza e competenza garantiscono una gestione efficiente e trasparente.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ufficio Moderno -->
+            <div class="photo-item" data-aos="fade-up">
+                <div class="photo-description col-12 col-md-6">
+                    <h2 class="photo-title" data-aos="fade-up">DESCRIZIONI</h2>
+                    <p class="photo-text" data-aos="fade-up" data-aos-delay="200">
+                        ESEMPIO:Un ambiente di lavoro moderno e tecnologico per garantire efficienza e trasparenza.
+                        Utilizziamo le ultime tecnologie per ottimizzare i processi amministrativi.
+                    </p>
+                </div>
+                <div class="photo-image col-12 col-md-6">
+                    <img src="images/gallery/ufficio/mod.jpeg" alt="Ufficio Moderno" class="img-fluid rounded"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Riunioni Condominiali -->
+            <div class="photo-item" data-aos="fade-up">
+                <div class="photo-image col-12 col-md-6">
+                    <img src="images/gallery/riunioni/rio.jpeg" alt="Riunioni Condominiali" class="img-fluid rounded"
+                        id="riunioni" loading="lazy">
+                </div>
+                <div class="photo-description col-12 col-md-6">
+                    <h2 class="photo-title" data-aos="fade-up">DESCRIZIONI</h2>
+                    <p class="photo-text" data-aos="fade-up" data-aos-delay="200">
+                        ESEMPIO:Organizzazione e gestione efficace delle riunioni condominiali per decisioni
+                        trasparenti.
+                        Facilitare la partecipazione attiva di tutti i condomini è la nostra priorità.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sicurezza Condominiale -->
+            <div class="photo-item" data-aos="fade-up">
+                <div class="photo-description col-12 col-md-6">
+                    <h2 class="photo-title" data-aos="fade-up">DESCRIZIONI</h2>
+                    <p class="photo-text" data-aos="fade-up" data-aos-delay="200">
+                        ESEMPIO:Implementazione di sistemi di sicurezza avanzati per garantire la tranquillità dei
+                        condomini.
+                        Monitoraggio costante e interventi tempestivi per prevenire e gestire eventuali emergenze.
+                    </p>
+                </div>
+                <div class="photo-image col-12 col-md-6">
+                    <img src="images/gallery/sicurezza/sicu.jpeg" alt="Sicurezza Condominiale" class="img-fluid rounded"
+                        loading="lazy">
+                </div>
+            </div>
+
+            <!-- Servizio di Pulizia -->
+            <div class="photo-item" data-aos="fade-up">
+                <div class="photo-image col-12 col-md-6">
+                    <img src="images/gallery/pulizia/puli.jpeg" alt="Servizio di Pulizia" class="img-fluid rounded"
+                        id="pulizie" loading="lazy">
+                </div>
+                <div class="photo-description col-12 col-md-6">
+                    <h2 class="photo-title" data-aos="fade-up">DESCRIZIONI</h2>
+                    <p class="photo-text" data-aos="fade-up" data-aos-delay="200">
+                        ESEMPIO:Manteniamo i condomini puliti e ordinati con servizi di pulizia professionale e
+                        regolare.
+                        Utilizziamo prodotti eco-friendly per garantire un ambiente sano e sostenibile.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEZIONE "TITOLARE" -->
+    <section class="owner-section" id="titolare">
+        <div>
+            <h2 class="section-title" data-aos="fade-up">DESCRIZIONE SERVIZIO SPECIALE </h2>
+            <img src="images/gallery/titolare/stefano_riva.jpeg" alt="Stefano Riva" class="img-fluid">
+            <p class="owner-description" data-aos="fade-left" data-aos-delay="400">
+                ESEMPIO :Il titolare dello studio, <strong>MARIO ROSSI</strong>, è descritto come un
+                professionista esperto e valido. Con anni di
+                esperienza nell'amministrazione condominiale, MARIO ROSSI garantisce una gestione trasparente,
+                efficiente e orientata al cliente, assicurando la massima soddisfazione dei condomini.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEZIONE TESTIMONIANZE -->
+    <section class="testimonials" id="testimonianze">
+        <div class="container">
+            <h2 data-aos="fade-up">Cosa Dicono di Noi</h2>
+            <div class="testimonial-container">
+                <!-- Le testimonianze verranno caricate dinamicamente tramite JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 - Studio Riva Amministrazione Immobili - Tutti i diritti riservati.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="mailto:info@studiocondomini.it" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+390123456789" aria-label="Telefono Cellulare">
+                        <i class="fas fa-mobile-alt"></i>
+                    </a>
+                    <a href="mailto:pec@studiocondomini.it" aria-label="PEC">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bottone fluttuante (link a form.html) -->
+    <button class="floating-form-btn" onclick="window.location.href='form.html'" aria-label="Richiedi Informazioni">
+        <i class="fas fa-info-circle"></i>
+    </button>
+
+    <!-- AOS JS (animazioni) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Smooth Scroll JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Bootstrap JS con hash corretto -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JS per animazioni -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Testimonianze Data -->
+    <script src="js/index/testimonianze.js"></script>
+
+
+    <!-- Content Data -->
+    <script src="js/index/content.js"></script>
+
+    <!-- Navbar JS -->
+    <script src="js/index/nav-bar.js"></script>
+
+    <!-- Script Personalizzato -->
+    <script src="js/index/cambioImmagineWeb.js"></script>
+    <script src="js/index/cambioImmagineHeader.js"></script>
+
+    <!-- ChatbotIndex.js (React) -->
+    <script type="text/babel" src="js/index/ChatbotIndex.js"></script>
+
+    <!-- Elimina bottone chatbot in base allo scroll -->
+    <script src="js/index/eliminabottoneChatbotScroll.js" defer></script>
+    <script src="js/index/script.js"></script>
+
+
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // AOS init
+            AOS.init();
+
+            // Scroll-to-top
+            const scrollTopBtn = document.getElementById('scrollTopBtn');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 300) {
+                    scrollTopBtn.style.display = 'block';
+                } else {
+                    scrollTopBtn.style.display = 'none';
+                }
+            });
+            scrollTopBtn.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
