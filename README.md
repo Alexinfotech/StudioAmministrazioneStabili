@@ -164,6 +164,5 @@ Questo progetto è distribuito sotto la licenza MIT. Per maggiori dettagli, cons
 Per ulteriori informazioni, richieste o collaborazioni, è possibile contattare:
 
 - **Email:** alessandro.tornabene78@gmail.com
-- **Telefono:** +39 0123456789
-- **Sito Web:** [Studio Amministrazione Immobili](#)
+- **Sito Web:** [[Studio Amministrazione Immobili](https://alexinfotech.github.io/web-condominio/](#)
 
