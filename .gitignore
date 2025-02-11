@@ -1,9 +1,4 @@
-# Ignora tutti i file PHP
 *.php
-
-# Ignora la cartella vendor (se usi PHP con Composer)
 vendor/
-
-# Ignora la cartella node_modules (se usi Node.js)
 node_modules/
 
