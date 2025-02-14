@@ -164,5 +164,5 @@ Questo progetto è distribuito sotto la licenza MIT. Per maggiori dettagli, cons
 Per ulteriori informazioni, richieste o collaborazioni, è possibile contattare:
 
 - **Email:** alessandro.tornabene78@gmail.com
-**Sito Web:** [Studio Amministrazione Immobili]([https://alexinfotech.github.io/vetrina-amministratore/)
+**Sito Web:** [Studio Amministrazione Immobili][[https://alexinfotech.github.io/vetrina-amministratore/]
 
